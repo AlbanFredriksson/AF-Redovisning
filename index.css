@@ -122,6 +122,7 @@ nav ul li a {
 }
 
 .jahaja{
+  text-decoration: none; /* Removes the underline from the anchor tag */
   margin-right: 100px;
 }
 
