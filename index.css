@@ -8,18 +8,18 @@
 }
 
 .text-overlay-minst-b {
-  animation: transitionIn 1s ease-in-out 1s forwards;
+  animation: transitionIn 1s ease-in-out 0.8s forwards;
   opacity: 0;
 }
 
 .text-overlay-minst-c {
-  animation: transitionIn 1s ease-in-out 1.5s forwards;
+  animation: transitionIn 1s ease-in-out 1.1s forwards;
   opacity: 0;
 
 }
 
 .knapp-start {
-  animation: transitionIn 0.5s ease-in-out 2s forwards;
+  animation: transitionIn 0.7s ease-in-out 1.4s forwards;
   opacity: 0;
 }
 
@@ -105,6 +105,13 @@ nav ul li a {
   color: #070707;
   text-decoration: none;
   font-size: 14px;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+nav ul li a:hover {
+  color: gray;
+  cursor: pointer;
+
 }
 
 .btn{
@@ -114,16 +121,22 @@ nav ul li a {
   border: none;
   outline: 0;
   border-radius: 5px;
-  background-color: rgb(76, 62, 238);
   color: white;
   font-weight: bold;
   cursor: pointer;
   font-size: 14px;
+  background-color: rgb(76, 62, 238);
+  transition: background-color 0.3s ease; 
+}
+
+.btn:hover {
+  background-color: #0072ec;
+  cursor: pointer;
 }
 
 .jahaja{
-  text-decoration: none; /* Removes the underline from the anchor tag */
   margin-right: 100px;
+    text-decoration: none; /* Removes the underline from the anchor tag */
 }
 
 .image-container {
@@ -197,8 +210,14 @@ nav ul li a {
   border: none;
   outline: 0;
   border-radius: 5px;
-  background-color: rgb(76, 62, 238);
   font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(76, 62, 238);
+  transition: background-color 0.3s ease; 
+}
+
+.knapp-start:hover {
+  background-color: #0072ec;
   cursor: pointer;
 }
 
@@ -374,6 +393,14 @@ nav ul li a {
   cursor: pointer;
 }
 
+.contact-left button:hover{
+  background: linear-gradient(270deg, #fc7f25, #eaa817);
+  cursor: pointer;
+  background-position: 100% 0; /* Simulates gradient movement */
+}
+
+
+
 .contact-right{
   width: 400px;
 }
@@ -441,3 +468,75 @@ nav ul li a {
   color: white;
   padding-left: 10px;
 }
+
+
+
+
+
+.footer {
+  background: linear-gradient(#ffffff, #e7e7e7);  
+  padding-top: 40px; /* Add some padding */
+  padding-bottom: 5px;
+  color: rgb(10, 10, 10);
+}
+
+.footer-container {
+  max-width: 1200px; /* Set a max width for the footer content */
+  margin: 0 auto; /* Center the footer container */
+}
+
+.footer-columns {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: space-around; /* Space columns unevenly */
+  gap: 30px; /* Optional: Add spacing between columns */
+}
+
+.first-column {
+  margin-right: auto; /* Push the first column to the left */
+}
+
+.second-column,
+.third-column {
+  margin-left: auto; /* Push the second and third columns to the right */
+}
+
+.footer-columns > div {
+  text-align: start; /* Center text within each column */
+}
+
+.first-column img {
+  max-width: 100%; /* Ensure the image fits within the column */
+  height: auto;
+  margin-bottom: 50px;
+  margin-top: 0.5rem;
+}
+
+.footer-texter-adress {
+  margin: 0rem;
+  font-size: 14px;
+}
+
+.footer-texter {
+  color: rgb(10, 10, 10);
+  margin: 0rem;
+  font-size: 14px;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.footer-texter:hover {
+  color: gray;
+  cursor: pointer;
+
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 18px;
+
+}
+
+.copyright{
+  font-size: 12px;
+}
+
+
